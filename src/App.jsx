@@ -57,8 +57,7 @@ class App extends React.Component {
     /*Uncomment below to render assignments*/
     if (this.state.buttonClicked === "assignments") {
       tabChoice = (
-        <List
-          placeholder="Add Assignment..."
+        <List placeholder="Add Assignment..."
           currList={this.state.assignments}
           addFunction={this.addAssignment}
           title="Assignments"
@@ -70,12 +69,7 @@ class App extends React.Component {
 
     if (this.state.buttonClicked === "students") {
       tabChoice = (
-        <List
-          placeholder="Add Student..." 
-          currList={this.state.students}
-          addFunction={this.addStudent}
-          title="Student Roster"
-        />
+        <List placeholder="Add Student..." currList={this.state.students addFunction={this.addStudent} title="Student Roster" />
       );
     } // change props for students rendering
 
