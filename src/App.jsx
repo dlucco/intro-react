@@ -77,7 +77,7 @@ class App extends React.Component {
           title="Student Roster"
         />
       );
-    }
+    } // change props for students rendering
 
     /* Uncomment lines below to render grades*/
     if (this.state.buttonClicked === "grades") {
